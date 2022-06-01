@@ -35,11 +35,14 @@ def get_noise_model(noise_type="gaussian,0,50"):
             watermark = Image.open('./1.png')
 
             if watermark.mode!='RGBA':
-                alpha = Image.new('L', watermark.size, 255)
-                watermark.putalpha(alpha)
+                if watermark.mode == 'P': #palette mode has transparency expressed in bytes
+                    watermark = watermark.convert('RGBA')
+                else:
+                    alpha = Image.new('L', watermark.size, 255)
+                    watermark.putalpha(alpha)
 
-            random_W = random.randint(-750 , 45)
-            random_H = random.randint(-500 , 30)
+            random_W = random.randint(-50 , 100)
+            random_H = random.randint(-50 , 100)
 
             paste_mask = watermark.split()[3].point(lambda i: int(i * TRANSPARENCY / 100.))
             image.paste(watermark, (random_W , random_H ), mask=paste_mask)
