@@ -41,7 +41,7 @@ def get_noise_model(noise_type="gaussian,0,50"):
             random_W = random.randint(-750 , 45)
             random_H = random.randint(-500 , 30)
 
-            paste_mask = watermark.split()[3].point(lambda i: i * TRANSPARENCY / 100.)
+            paste_mask = watermark.split()[3].point(lambda i: int(i * TRANSPARENCY / 100.))
             image.paste(watermark, (random_W , random_H ), mask=paste_mask)
 
             return img  #测试时请注释这一行 启用48行

@@ -2,6 +2,13 @@
 
 This is a Deep learning project that removes watermarks and is based on noise2noise modifications. The original project is from https://github.com/yu4u/noise2noise
 
+
+# Dependency Setup
+
+Set up tensorflow for mac M1 using
+https://developer.apple.com/metal/tensorflow-plugin/
+
+
 # Detailed instructions for use
 [Detailed instructions for use](doc/detailed_usage.md)
 https://www.zhihu.com/question/333086833/answer/841650555

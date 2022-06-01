@@ -4969,3 +4969,11 @@ dataset/val2017/000000578236.jpg
 dataset/val2017/000000578489.jpg
 dataset/val2017/000000578500.jpg
 dataset/val2017/000000578545.jpg
+*.pyc
+dataset/.DS_Store
+doc/.DS_Store
+inputdir/100458_2.jpg
+text_noise/history.npz
+text_noise/weights.001-84.927-8.66675.hdf5
+outputdir/100458_2.png
+.DS_Store
