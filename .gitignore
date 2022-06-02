@@ -4979,3 +4979,14 @@ outputdir/100458_2.png
 .DS_Store
 *.jpg
 *.hdf5
+outputdir/WIL-20220529-112350.png
+outputdir/WIL-20220529-112149.png
+outputdir/WIL-20220529-111440.png
+outputdir/WIL-20220529-110850.png
+outputdir/WIL-20220529-110422.png
+outputdir/WIL-20220529-110132.png
+outputdir/WIL-20220529-110132-2.png
+outputdir/WIL-20220529-105821.png
+outputdir/WIL-20220529-101125.png
+val_loss.png
+val_PSNR.png
