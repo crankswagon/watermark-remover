@@ -4990,3 +4990,5 @@ outputdir/WIL-20220529-105821.png
 outputdir/WIL-20220529-101125.png
 val_loss.png
 val_PSNR.png
+*.jpeg
+remove_black_and_white_photos.py
